@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>
+		HTML EXERCISE
+	</title>
+</head>
+<body>
+	<p>
+	1. What is the Hypertext Transfer Protocol (HTTP)<br>
+	 Answer - Hypertext Transfer Protocol (HTTP) is an application-layer protocol for transmitting hypermedia documents, such as HTML. It was designed for communication between web browsers and web servers, but it can also be used for other purposes.
+	<br>
+	<br>
+	2. Why is HTTP called a stateless protocol?<br>
+	 Answer - HTTP is called a stateless protocol beacuse it does not store data after a request has been closed.Meaning once a transaction is closed, the connection between the browser and server also ends.
+	<br>
+	<br>
+	3. Describe the three phases of establishing a session using client-server protocols such as HTTP.<br>
+	Answer - <br>
+	 1. The client sends its request and waits for an reply.<br>
+	 2. The sercer processes the request.<br>
+	 3. The server replied back with the code and appoproate data.
+	 <br>
+	 <br>
+	4. Describe the parameters on a get and post request.<br>
+	 GET - GET is used to request data from a specific databse.<br>
+	 /test/demo_form.php?name1=value1&name2=value2
+	 <br>
+	 <br>
+	 POST - POST is used to send data to a server to either create or update a data.<br>
+	 POST /test/demo_form.php HTTP/1.1
+	 Host: w3schools.com
+	 name1=value1&name2=value2
+	 <br>
+	 <br>
+	5. What are the HTTP response status code and What do the HTTP status codes, 200, and 404 indicate?<br>
+	 Answer - HTTP response status codes indicate whether a specific HTTP request has been successfully completed. Responses are grouped in five classes:<br>
+
+		Informational responses (100–199)<br>
+		Successful responses (200–299)<br>
+		Redirects (300–399)<br>
+		Client errors (400–499)<br>
+		Server errors (500–599)<br>
+	<br>
+	200 -  OK. The request has succeeded.<br>
+	404 - Not Found. The server can not find the requested resource.
+	<br>
+	<br>
+	6. What are HTTP cookies? Give an example.<br>
+	 Answer - HTML cookies are small pieces of data that a server send to the user's browser.<br>
+	 /docs.<br>
+	 /docs/Web/<br>
+	 /docs/Web/HTTP.<br>
+	<br>
+	<br>
+	7. Why are cookies a security issue?<br>
+	 Answer - Cookies are a security issue because a cookie keeps track of a user's browsing history which can be a loophole for hackers to be able to hack into and get access to their browsing session.
+	<br>
+	<br>
+	8. Describe session hijacking and XSS.<br>
+	 Answer - Session hijacking is an attack where a user session is taken over by an attacker. A session starts when you log into a service, for example your banking application, and ends when you log out. The attack relies on the attacker’s knowledge of your session cookie, so it is also called cookie hijacking or cookie side-jacking. Although any computer session could be hijacked, session hijacking most commonly applies to browser sessions and web applications.<br><br>
+
+	 Cross-site scripting (XSS): By exploiting server or application vulnerabilities, attackers can inject client-side scripts (typically JavaScript) into web pages, causing your browser to execute arbitrary code when it loads a compromised page. If the server doesn’t set the HttpOnly attribute in session cookies, injected scripts can gain access to your session key, providing attackers with the necessary information for session hijacking.<br>
+	 <br>
+	 <br>
+	9. Describe Cross-site request forgery(CSRF)<br>
+	 Answer - Cross-Site Request Forgery (CSRF) is an attack that forces an end user to execute unwanted actions on a web application in which they’re currently authenticated. With a little help of social engineering (such as sending a link via email or chat), an attacker may trick the users of a web application into executing actions of the attacker’s choosing.<br>
+	<br>
+	<br>
+	10. What are Cross-site HTTP requests (CORS) and what requests use CORS?<br>
+	 Answer - Cross-Origin Resource Sharing (CORS) is an HTTP-header based mechanism that allows a server to indicate any other origins (domain, scheme, or port) than its own from which a browser should permit loading of resources. CORS also relies on a mechanism by which browsers make a “preflight” request to the server hosting the cross-origin resource, in order to check that the server will permit the actual request.<br>
+	 <br>
+	 For security reasons, browsers restrict cross-origin HTTP requests initiated from scripts.<br>
+	 This means that a web application using those APIs can only request resources from the same origin the application was loaded from unless the response from other origins includes the right CORS headers.
+	</p>
+</body>
+</html>
